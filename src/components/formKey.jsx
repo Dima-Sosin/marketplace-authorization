@@ -1,10 +1,32 @@
 import {useState} from 'react';
-const checkKey = require('./checkKey');
+
+function checkKey(key, code) {
+    if (key === "")
+    {
+        return "Пустая строка!"
+    }
+    if(/\D/.test(key))
+    {
+        return "Код не должен содержать буквы!"
+    }
+    if(key.length !== 6)
+    {
+        return "Код должен содержать 6 цифр!"
+    }
+    if (key !== code)
+    {
+        return "Неправильный код!"
+    } 
+    else 
+    {
+        return(true)
+    }
+}
 
 export const FormKey = () => {
     const [key, setKey] = useState("");
     const error = document.getElementById("error-msg");
-    const code = 123456;
+    const code = "123456";
 
     const btnClick = (e) => {
         e.preventDefault();
@@ -26,7 +48,7 @@ export const FormKey = () => {
                 <div class="input-block">
                     <input 
                         class="input" 
-                        type="number"
+                        type="text"
                         name="input-key"
                         placeholder="Введите код из СМС"
                         onChange={(e) => {
