@@ -1,8 +1,9 @@
-# React + Vite
+# Проект авторизации маркетплейса
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Это лабораторная работа, в которой будут использоваться web-технологии, а именно HTML, CSS, JavaScript, основной библиотекой, используемой в качестве фреймворка является [React](https://react.dev/), в качестве сборщика приложения применяется [Vite](https://vitejs.dev/), также для проведения тестирования будет использоваться специализированная библиотека [Jest](https://jestjs.io/ru/).
 
-Currently, two official plugins are available:
+Тут реализованы две страницы:
+1. Страница ввода номера телефона;
+2. Страница ввода кода из СМС.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+У каждой страницы есть своя функция проверки валидности введенных данных, эти самые функции и будут тестироваться с помощью библиотеки [Jest](https://jestjs.io/ru/).
