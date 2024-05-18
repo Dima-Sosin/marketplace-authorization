@@ -2,7 +2,7 @@ import {useState} from 'react';
 import {FormKey} from './formKey';
 
 function checkPhone(number, valid) {
-    if (number === "") 
+    if (number === "")
     {
         return "Пустая строка!";
     }
@@ -32,7 +32,6 @@ export const FormPhone = () => {
         e.preventDefault();
         let result = checkPhone(phone, valid);
         if (result === true) {
-            console.log("Я дошел до сюда!")
             setIsPhone(false)
         } else {
             error.textContent = result;
@@ -54,13 +53,13 @@ export const FormPhone = () => {
                             name="input-phone"
                             placeholder="Введите номер телефона"
                             onChange={(e) => {
-                                setPhone(e.target.value); 
+                                setPhone(e.target.value);
                                 error.classList.remove("error-active");
                             }}
                         />
                         <span className="error" id="error-msg"></span>
                     </div>
-                    <button className="btn" type="submit" onClick={(e) => btnClick(e)}>
+                    <button name="button1" className="btn" type="submit" onClick={(e) => btnClick(e)}>
                         Продолжить
                     </button>
                 </div>

@@ -58,7 +58,7 @@ export const FormKey = () => {
                     />
                     <span class="error" id="error-msg"></span>
                 </div>
-                <button type="submit" class="btn" onClick={(e) => btnClick(e)}>
+                <button name="button2" type="submit" class="btn" onClick={(e) => btnClick(e)}>
                     Войти
                 </button>
             </div>
