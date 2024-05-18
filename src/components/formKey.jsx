@@ -1,7 +1,7 @@
 import {useState} from 'react';
 
 function checkKey(key, code) {
-    if (key === "")
+    if (key === " ")
     {
         return "Пустая строка!"
     }

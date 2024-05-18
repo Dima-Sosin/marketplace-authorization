@@ -2,7 +2,7 @@ import {useState} from 'react';
 import {FormKey} from './formKey';
 
 function checkPhone(number, valid) {
-    if (number === "")
+    if (number === " ")
     {
         return "Пустая строка!";
     }
