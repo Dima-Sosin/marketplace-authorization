@@ -23,6 +23,10 @@ function checkKey(key, code) {
     }
 }
 
+/**
+ * Компонент формы для ввода ключа
+ * @returns возвращает HTML код формы
+ */
 export const FormKey = () => {
     const [key, setKey] = useState("");
     const error = document.getElementById("error-msg");

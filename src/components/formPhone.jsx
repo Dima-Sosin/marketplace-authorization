@@ -20,6 +20,10 @@ function checkPhone(number, valid) {
     }
 }
 
+/**
+ * Компонент формы для ввода номера телефона
+ * @returns возвращает HTML код формы
+ */
 export const FormPhone = () => {
     const [phone, setPhone] = useState("");
     const [isPhone, setIsPhone] = useState(true);
