@@ -2,10 +2,10 @@
  * Функция осуществляет проверку введенного кода из СМС
  * @param {*} key код, который ввел пользователь
  * @param {*} code правильный код
- * @returns возвращает или сообщение ошибке или true
+ * @returns возвращает или сообщение ошибки или true
  */
 function checkKey(key, code) {
-    if (key === "")
+    if (key === " ")
     {
         return "Пустая строка!"
     }
@@ -26,4 +26,9 @@ function checkKey(key, code) {
         return(true)
     }
 }
-module.exports = checkKey;
+//Для того, чтобы провести модульное тестирование 
+//раскоментируй строчку 33 и закоментируй строчку 34
+//Чтобы заработал UI сделай наоборот
+
+//module.exports = checkKey;
+export default checkKey;

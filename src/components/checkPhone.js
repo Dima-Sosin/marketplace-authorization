@@ -5,7 +5,7 @@
  * @returns возвращает или сообщение ошибки или true
  */
 function checkPhone(number, valid) {
-    if (number === "") 
+    if (number === " ") 
     {
         return "Пустая строка!";
     }
@@ -22,4 +22,9 @@ function checkPhone(number, valid) {
         return "Неправильный номер!";
     }
 }
-module.exports = checkPhone;
+//Для того, чтобы провести модульное тестирование 
+//раскоментируй строчку 29 и закоментируй строчку 30
+//Чтобы заработал UI сделай наоборот
+
+//module.exports = checkPhone;
+export default checkPhone;

@@ -1,24 +1,6 @@
 import {useState} from 'react';
 import {FormKey} from './formKey';
-
-function checkPhone(number, valid) {
-    if (number === " ")
-    {
-        return "Пустая строка!";
-    }
-    if (!(/^(\+7|8)/.test(number)))
-    {
-        return "Номер должен начинаться с +7 или 8!";
-    }
-    if(valid.test(number)) 
-    {
-        return true;
-    } 
-    else 
-    {
-        return "Неправильный номер!";
-    }
-}
+import checkPhone from './checkPhone';
 
 /**
  * Компонент формы для ввода номера телефона
